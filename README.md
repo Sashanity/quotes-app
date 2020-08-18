@@ -14,30 +14,30 @@ cd quotes-app
 ```
 
 2. Create virtual environment, activate it, and load with requirements
-```
+```sh
 # create
-python3 -m venv env
+$ python3 -m venv env
 
 # activate
-. venv/bin/activate
+$ . venv/bin/activate
 
 # load
-pip install -r requirements.txt 
+$ pip install -r requirements.txt 
 ```
 3. Create `.env` file and set link to MongoDB Atlas Cluster in it.
-```
+```sh
 # in quotes-app directory
 # create .env file
-touch .env
+$ touch .env
 
 # edit
-nano .env
+$ nano .env
 
 # once the editor opens, add your link in this format
-MONGO_URI="mongodb+srv:// ....."
+$ MONGO_URI="mongodb+srv:// ....."
 ```
 
 4. Run the application on local host
-```
-python app.py
+```sh
+$ python app.py
 ```
