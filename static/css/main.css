@@ -1,0 +1,45 @@
+body, html{
+    margin: 0;
+    font-family: "Lucida Console", Courier, monospace;
+    color: white;
+    background-image: url("../img/backdrop.jpg");
+
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #0785;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 60%;
+}

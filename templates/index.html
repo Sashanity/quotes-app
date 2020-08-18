@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Add your quote</h1>
+    {% if quotes|length < 1 %}   
+    <h4 style="text-align: center">There is no quotes yet, create a new quote below!</h4>
+    {% else %}
+    <table>
+        <tr>
+            <th>Quote</th>
+            <th>Actions</th>
+        </tr>
+        {% for quote in quotes %}
+            <tr>
+                <td>{{ quote.content }}</td>
+               
+                <td>
+                    <a style="color: rgb(255, 255, 255)" href="/delete/{{quote._id}} ">Delete</a>
+                    <br>
+                    <a style="color: rgb(255, 255, 255)" href="/update/{{quote._id}}">Update</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    <div class="form">
+        <form action="/" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Add quote"></button>
+        </form>
+    </div>
+</div>
+{% endblock %}
