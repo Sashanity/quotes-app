@@ -8,9 +8,9 @@ This little project was created to practice Flask web framework.
 ## To Run
 
 1. Clone this repo and go to the quotes-app directory
-```
-git clone https://github.com/Sashanity/quotes-app.git
-cd quotes-app
+``` sh
+$ git clone https://github.com/Sashanity/quotes-app.git
+$ cd quotes-app
 ```
 
 2. Create virtual environment, activate it, and load with requirements
